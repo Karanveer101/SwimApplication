@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create Session</h2>
+<form action="/Swimmer/Create" method="POST">
+
+    <div>
+        <label>
+            Title:
+        </label>
+        <input type="text" name="Title" />
+    </div>
+
+
+    <div>
+        <label>
+            Date:
+        </label>
+        <input type="date" name="Date" />
+    </div>
+
+    <div>
+        <label>
+            Duration:
+        </label>
+        <input type="time" name="Duration" />
+
+    </div>
+
+    <div>
+        <label>
+            Distance:
+        </label>
+        <input type="number" name="Distance" />
+    </div>
+
+    <div>
+        <label>
+            Distance:
+        </label>
+        <input type="number" name="Distance" />
+    </div>
+
+    <div>
+        <label>
+            StrokeType:
+        </label>
+        <input type="text" name="Distance" />
+    </div>
+
+    <div>
+        <input type="submit" value="Add Session" />
+    </div>
+</form>
+

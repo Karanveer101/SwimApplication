@@ -1,0 +1,12 @@
+﻿@model SwimApplication.Models.ViewModels.DetailsSwimmer
+@{
+    ViewBag.Title = "View";
+}
+<a href="/Swimmer/List">Go back to list</a>
+<br />
+<a href="/Swimmer/Edit/@Model.SelectedSwimmer.SwimmerID">Update</a>
+<br />
+<a style="color:#ab2020;" href="/Swimmer/DeleteConfirm/@Model.SelectedSwimmer.SwimmerID">Delete</a>
+<div>Age: @Model.SelectedSwimmer.Age</div>
+<div>Gender: @Model.SelectedSwimmer.Gender</div>
+

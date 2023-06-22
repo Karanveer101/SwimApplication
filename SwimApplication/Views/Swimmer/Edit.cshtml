@@ -1,0 +1,30 @@
+﻿@model SwimApplication.Models.ViewModels.UpdateSwimmer
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Update Swimmer</h2>
+<form action="/Swimmer/Update/@Model.SelectedSwimmer.SwimmerID" method="POST">
+    <div style="display:none;">
+        @* Pass through the Swimmer ID *@
+        <input type="text" name="SwimmerID" value="@Model.SelectedSwimmer.SwimmerID" />
+    </div>
+    <div>
+        <label>Name:</label> <input type="text" name="Name" value="@Model.SelectedSwimmer.SwimmerName" />
+    </div>
+
+    <div>
+        <label>Age:</label> <input type="text" name="Age" value="@Model.SelectedSwimmer.Age" />
+    </div>
+
+    <div>
+        <label>Gender:</label> <input type="text" name="Gender" value="@Model.SelectedSwimmer.Gender" />
+    </div>
+
+
+    <div>
+        <input type="submit" value="Update Swimmer" />
+
+    </div>
+</form>

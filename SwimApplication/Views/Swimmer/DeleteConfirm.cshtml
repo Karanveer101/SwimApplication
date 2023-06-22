@@ -1,0 +1,15 @@
+﻿@model SwimApplication.Models.SwimmerDto
+
+@{
+    ViewBag.Title = "DeleteConfirm";
+}
+
+<h2>Are you sure you want to delete this swimmer?</h2>
+<a href="/Swimmer/List">Cancel</a>
+<h2>@Model.SwimmerName</h2>
+<div>Distance: @Model.Age</div>
+<div>Duration: @Model.Gender</div>
+<form action="/Swimmer/Delete/@Model.SwimmerID" method="POST">
+    <input type="submit" value="Confirm Delete" />
+
+</form>

@@ -1,0 +1,14 @@
+﻿@model SwimApplication.Models.ViewModels.DetailsSession
+@{
+    ViewBag.Title = "View";
+}
+<a href="/Session/List">Go back to list</a>
+<br />
+<a href="/Session/Edit/@Model.SelectedSession.SessionID">Update</a>
+<br />
+<a style="color:#ab2020;" href="/Session/DeleteConfirm/@Model.SelectedSession.SessionID">Delete</a>
+<div>Title: @Model.SelectedSession.Title</div>
+<div>Distance: @Model.SelectedSession.Distance</div>
+<div>Duration: @Model.SelectedSession.Duration</div>
+<div>StrokeType: @Model.SelectedSession.StrokeType</div>
+

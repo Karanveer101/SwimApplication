@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Add a new swimmer</h2>
+<form action="/Swimmer/Create" method="POST">
+
+    <div>
+        <label>
+            Swimmer Name:
+        </label>
+        <input type="text" name="SwimmerName" />
+    </div>
+
+
+    <div>
+        <label>
+            Age:
+        </label>
+        <input type="number" name="Age" />
+    </div>
+
+    <div>
+        <label>
+            Gender:
+        </label>
+        <input type="text" name="Gender" />
+    </div>
+
+
+
+
+    <div>
+        <input type="submit" value="Add Swimmer" />
+    </div>
+</form>
+

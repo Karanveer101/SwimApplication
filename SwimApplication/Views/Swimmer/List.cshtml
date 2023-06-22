@@ -1,0 +1,14 @@
+﻿@model IEnumerable<SwimApplication.Models.SwimmerDto>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+<a href="/Swimmer/New">New Swimmer</a>
+@foreach (var Swimmer in Model)
+{
+    <h2><a href="/Swimmer/Details/@Swimmer.SwimmerID">@Swimmer.SwimmerName</a></h2>
+    <div>Age: @Swimmer.Age</div>
+    <div>Gender: @Swimmer.Gender</div>
+
+}

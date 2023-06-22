@@ -1,0 +1,15 @@
+﻿@model SwimApplication.Models.SessionDto
+
+@{
+    ViewBag.Title = "DeleteConfirm";
+}
+
+<h2>Are you sure you want to delete this session?</h2>
+<a href="/Session/List">Cancel</a>
+<h2>@Model.Date</h2>
+<div>Distance: @Model.Distance</div>
+<div>Duration: @Model.Duration</div>
+<form action="/Session/Delete/@Model.SessionID" method="POST">
+    <input type="submit" value="Confirm Delete" />
+
+</form>

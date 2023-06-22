@@ -1,0 +1,22 @@
+﻿@model SwimApplication.Models.ViewModels.UpdateSession
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Update Session</h2>
+<form action="/Session/Update/@Model.SelectedSession.SessionID" method="POST">
+    <div style="display:none;">
+        @* Pass through the Session ID *@
+        <input type="text" name="SessionID" value="@Model.SelectedSession.SessionID" />
+    </div>
+    <div>
+        <label>Date:</label> <input type="text" name="Date" value="@Model.SelectedSession.Date" />
+    </div>
+   
+   
+    <div>
+        <input type="submit" value="Update Session" />
+
+    </div>
+</form>

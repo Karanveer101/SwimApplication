@@ -1,0 +1,16 @@
+﻿@model IEnumerable<SwimApplication.Models.SessionDto>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+<a href="/Session/New">New Session</a>
+@foreach (var session in Model)
+{
+    <h2><a href="/Session/Details/@session.SessionID">@session.Date</a></h2>
+    <div>Distance: @session.Distance</div>
+    <div>Duration: @session.Duration</div>
+    <div>Swimmer: @session.SwimmerName</div>
+
+
+}
